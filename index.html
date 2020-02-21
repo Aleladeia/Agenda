@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Agenda</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Bem vindo a agenda</h1>
+        <h3>Clique no botão <br> para criar uma nova atividade.</h3>
+    </header>
+
+
+    <main>
+
+        <h2 class="titulolista">Atividades a fazer</h2>
+
+        <section class="atividades">
+            <div class="atividade">
+                <div class="nome">{{atividade.nome}}</div>
+                <div class="descricao">{{atividade.descricao}}</div>
+                <div class="data">{{atividade.data}}</div>
+                <div class="hora">{{atividade.hora}}</div>
+            </div>
+            
+        </section>
+
+        <button class="novo">Nova atividade</button>
+
+    </main>
+
+    
+
+    <section class="form">
+        <form>
+            <input 
+                type="text" 
+                name="nome"
+                placeholder="Nome da atividade"
+            >
+            <input 
+                type="text" 
+                name="descricao" 
+                placeholder="Descrição da atividade"
+            >
+            <input 
+                type="date" 
+                name="data"
+            >
+            <input 
+                type="time" 
+                name="hora"
+            >
+            
+        </form>
+        <button class="salvar"> 
+            Salvar
+         </button>
+        <button class="cancelar">
+            Cancelar
+        </button>
+        
+    </section>
+
+
+
+</body>
+
+</html>
