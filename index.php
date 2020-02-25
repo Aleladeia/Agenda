@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,23 +24,21 @@
         <h2 class="titulolista">Atividades a fazer</h2>
 
         <section class="atividades">
-            <div class="atividade">
-                <div class="nome">{{atividade.nome}}</div>
-                <div class="descricao">{{atividade.descricao}}</div>
-                <div class="data">{{atividade.data}}</div>
-                <div class="hora">{{atividade.hora}}</div>
+            <div class="atividade"> 
+                <div class="nome"></div>
+                <div class="descricao"></div>
+                <div class="dia"></div>
+                <div class="hora"></div>
             </div>
-            
         </section>
 
         <button class="novo">Nova atividade</button>
 
     </main>
 
-    
 
     <section class="form">
-        <form>
+        <form  method="post" action="teste.php">
             <input 
                 type="text" 
                 name="nome"
@@ -46,24 +46,21 @@
             >
             <input 
                 type="text" 
-                name="descricao" 
+                name="descricao"
                 placeholder="Descrição da atividade"
             >
             <input 
                 type="date" 
-                name="data"
+                name="dia"
             >
             <input 
                 type="time" 
                 name="hora"
             >
-            
+            <button class="salvar" type="submit" value="salvar"> Salvar</button>
+            <button class="cancelar" type="reset" value="cancelar">Cancelar</button>
         </form>
-        <button class="salvar"> 
-            Salvar
-         </button>
-        <button class="cancelar">
-            Cancelar
+        
         </button>
         
     </section>

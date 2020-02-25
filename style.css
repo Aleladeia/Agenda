@@ -85,7 +85,7 @@ form input::placeholder{
     width: 50%;
     align-content: center;
     padding: 8px 25px;
-    margin-bottom: 4px;
+    margin: 0px 75px;
     
 
     border-radius: 4px;
@@ -99,7 +99,7 @@ form input::placeholder{
 .cancelar{
     width: 50%;
 
-    margin-bottom: 4px;
+    margin: 4px 75px;
     padding: 8px 12px;
 
     border-radius: 4px;
@@ -112,9 +112,8 @@ form input::placeholder{
 
 .novo{
     
-    
     border-radius: 4px;
-    border: 1px #ffffff solid;
+    border: 2px #525252 solid;
     font-weight: bold;
 
     background-color:  #313131;
@@ -132,11 +131,11 @@ form input::placeholder{
 }
 
 /*LISTA DE ATIVIDADES*/
-.atividade::before{
+div.atividade::before{
     content: "";
     background-color: #91919122;
 
-    width: 42%;
+    width: 540px;
     height: 20px;
 
     position: absolute;
